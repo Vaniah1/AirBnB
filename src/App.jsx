@@ -9,19 +9,8 @@ import "../src/images/mountain-bike.png";
 import "../src/images/wedding-photography.png";
 
 function App() {
-  const cards = data.map((item, index) => {
-    return (
-      <Card
-        key={index}
-        img={item.coverImg}
-        rating={item.stats.rating}
-        reviewCount={item.stats.reviewCount}
-        location={item.location}
-        title={item.title}
-        price={item.price}
-        openSpots={item.openSpots}
-      />
-    );
+  const cards = data.map((item) => {
+    return <Card key={item.id} {...item} />;
   });
   return (
     <div>
