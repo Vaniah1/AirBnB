@@ -35,7 +35,7 @@ function Card({
   return (
     <div className="cont">
       {badgeText && <div className="card--badge">{badgeText}</div>}
-      <img src={`../images/${img}`} className="card--image" alt={title} />
+      <img src={`${img}`} className="card--image" alt={title} />
       <div className="card--stats">
         <img src={star} className="card--star" alt="star" />
         <span>{rating}</span>
