@@ -1,4 +1,4 @@
-import star from "../images/star.png";
+import star from "../img/star.png";
 
 export default function Card(props) {
   let badgeText;
@@ -11,7 +11,7 @@ export default function Card(props) {
   return (
     <div className="cont">
       {badgeText && <div className="card--badge">{badgeText}</div>}
-      <img src={props.coverImg} className="card--image" />
+      <img src={`../images/${props.coverImg}`} className="card--image" />
       <div className="card--stats">
         <img src={star} className="card--star" />
         <span>{props.stats.rating}</span>
